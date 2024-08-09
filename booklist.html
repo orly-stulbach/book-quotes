@@ -5,44 +5,68 @@
         <link rel="stylesheet" href="booklist.css" >
         <style>
 
+            .parent-container {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 8px;
+            }
+
+            .container {
+                display: flex;
+                align-items: center;
+            }
+
             .img {
                 width: 150px;
                 height: 220px;
                 display: inline-block;
-                vertical-align:middle;
+                vertical-align: middle;
             }
             .button {
-              border: black;
+              border: 1px white;
               color: white;
-              width: 50px;
+              width: 59px;
               height: 220px;
-              /* padding: 15px 32px; */
+              padding: 1px;
               text-align: center;
               text-decoration: none;
               display: inline-block;
               font-size: 12px;
               margin: 4px 2px;
               cursor: pointer;
-              font-family: cursive;
-              line-height: 15px;
+              font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+              line-height: 1.5;
+              white-space: normal; /* allows text to wrap */
+              word-wrap: break-word;
             }
             
             .gim_button {background-color: #aa0417;}
             .bib_button {background-color: #008CBA;} 
 
             .button:hover {
-                border: 2px solid black;
-                background-color: white;
+                border: 1.5px black;
+                /* background-color: white; */
                 color: black;
             }
             </style>
     </head>
     <body>
         <h2>My Bookshelf</h2>
-        <h4>Tap on the Title for Quotes</h4>
-        <img src="https://upload.wikimedia.org/wikipedia/en/7/73/A_Gentleman_in_Moscow_%28Amor_Towles%29.png" class="img"/>
-        <a href="gim.html"> <button class="button gim_button">A Gentleman in Moscow</button></a>
-        <a href="bib.html"> <button class="button bib_button">The Boys in the Boat</button></a>
+        <h4>Tap on the Book for Quotes I Liked</h4>
+        <div class="parent-container">
+            <div class="container">
+                <img src="https://upload.wikimedia.org/wikipedia/en/7/73/A_Gentleman_in_Moscow_%28Amor_Towles%29.png" class="img"/>
+                <a href="gim.html"> <button class="button gim_button">A Gentleman in Moscow</button></a>
+            </div>
+            <div class="container">
+                <img src="https://m.media-amazon.com/images/I/81uQRVpi2UL._AC_UF1000,1000_QL80_.jpg" class="img"/>
+                <a href="bib.html"> <button class="button bib_button">The Boys in the Boat</button></a>
+            </div>
+            <div class="container">
+                <img src="" class="img">
+                <a href="blank.html"> <button class="button blank-buttom">Blank</button></a>
+            </div>
+        </div>
     </body>
 </html>
     
