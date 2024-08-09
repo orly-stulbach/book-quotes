@@ -4,21 +4,31 @@
         <title>My Bookshelf</title>
         <link rel="stylesheet" href="booklist.css" >
         <style>
+
+            .img {
+                width: 150px;
+                height: 220px;
+                display: inline-block;
+                vertical-align:middle;
+            }
             .button {
               border: black;
               color: white;
-              padding: 15px 32px;
+              width: 50px;
+              height: 220px;
+              /* padding: 15px 32px; */
               text-align: center;
               text-decoration: none;
               display: inline-block;
-              font-size: 16px;
+              font-size: 12px;
               margin: 4px 2px;
               cursor: pointer;
               font-family: cursive;
+              line-height: 15px;
             }
             
-            .button1 {background-color: #aa0417;}
-            .button2 {background-color: #008CBA;} 
+            .gim_button {background-color: #aa0417;}
+            .bib_button {background-color: #008CBA;} 
 
             .button:hover {
                 border: 2px solid black;
@@ -30,8 +40,9 @@
     <body>
         <h2>My Bookshelf</h2>
         <h4>Tap on the Title for Quotes</h4>
-        <button type="button" class="button button1">A Gentleman in Moscow</button>
-    <button class="button button2">The Boys in the Boat</button>
+        <img src="https://upload.wikimedia.org/wikipedia/en/7/73/A_Gentleman_in_Moscow_%28Amor_Towles%29.png" class="img"/>
+        <a href="gim.html"> <button class="button gim_button">A Gentleman in Moscow</button></a>
+        <a href="bib.html"> <button class="button bib_button">The Boys in the Boat</button></a>
     </body>
 </html>
     
