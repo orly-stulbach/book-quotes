@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My Bookshelf</title>
+        <link rel="stylesheet" href="booklist.css" >
+        <style>
+
+            .parent-container {
+                display: grid;
+                grid-template-columns: repeat(6, 1fr);
+                gap: 1px;
+            }
+
+            .container {
+                display: flex;
+                align-items: center;
+            }
+
+            .img {
+                width: 150px;
+                height: 220px;
+                display: inline-block;
+                vertical-align: middle;
+            }
+            .button {
+              border: 1px white;
+              color: white;
+              width: 59px;
+              height: 220px;
+              padding: 1px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 12px;
+              margin: 4px 2px;
+              cursor: pointer;
+              font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+              line-height: 1.5;
+              white-space: normal; /* allows text to wrap */
+              word-wrap: break-word;
+            }
+            
+            .gim_button {background-color: #aa0417;}
+            .bib_button {background-color: #008CBA;} 
+            .mco_button {background-color: #c5c5c5;} 
+            .pap_button {background-color: #fcc6e5;}
+            .dl_button {background-color: #c48b4f;}  
+            .world_button {background-color: #2c50ad;}
+
+            .button:hover {
+                border: 1.5px black;
+                /* background-color: white; */
+                color: black;
+            }
+
+            .img:hover {
+                border: 3px solid lightgrey;
+            }
+            </style>
+    </head>
+    <body>
+        <h2>My Bookshelf</h2>
+        <h4>Tap on the Book for Quotes I Liked
+            <br>Tap on the Cover to go to Thriftbooks Purchase Page</h4>
+        <div class="parent-container">
+            <!--The Worlds I See-->
+            <div class="container">
+                <a href="https://www.thriftbooks.com/browse/?b.search=the%20worlds%20i%20see#b.s=mostPopular-desc&b.p=1&b.pp=50&b.oos&b.tile">
+                    <img src="https://m.media-amazon.com/images/I/81blPlUVdyL._AC_UF1000,1000_QL80_.jpg" class="img" alt="The Worlds I See Book Cover">
+                </a>
+                <a href="worlds.html"> 
+                    <button type="button" class="button world_button">The Worlds I See</button>
+                </a>                
+            </div>
+            <!-- A Man Called Ove -->
+            <div class="container">
+                <a href="https://www.thriftbooks.com/browse/?b.search=a%20man%20called%20ove#b.s=mostPopular-desc&b.p=1&b.pp=50&b.oos&b.tile">
+                    <img src="https://m.media-amazon.com/images/I/81JDmCKnv0L._AC_UF1000,1000_QL80_.jpg" class="img" alt="A Man Called Ove Book Cover">
+                </a>
+                <a href="man_called_ove.html"> <button class="button mco_button">A Man Called Ove</button></a>
+            </div>
+            <!-- The Boys in the Boat -->
+            <div class="container">
+                <a href="https://www.thriftbooks.com/browse/?b.search=the%20boys%20in%20the%20boat#b.s=mostPopular-desc&b.p=1&b.pp=50&b.oos&b.tile">
+                    <img src="https://m.media-amazon.com/images/I/81uQRVpi2UL._AC_UF1000,1000_QL80_.jpg" class="img" alt="The Boys in the Boat Book Cover">
+                </a>
+                <a href="bib.html"> <button class="button bib_button">The Boys in the Boat</button></a>
+            </div>
+            <!-- A Gentleman in Moscow -->
+            <div class="container">
+                <a href="https://www.thriftbooks.com/browse/?b.search=a%20gentleman%20in%20moscow#b.s=mostPopular-desc&b.p=1&b.pp=50&b.oos&b.tile">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/7/73/A_Gentleman_in_Moscow_%28Amor_Towles%29.png" class="img" alt="A Gentleman in Moscow Book Cover">
+                </a>
+                <a href="gim.html"> <button class="button gim_button">A Gentleman in Moscow</button></a>
+            </div>
+            <!-- Pride and Prejudice -->
+             <div class="container">
+                <a href="https://www.thriftbooks.com/browse/?b.search=pride%20and%20prejudice#b.s=mostPopular-desc&b.p=1&b.pp=50&b.oos&b.tile">
+                    <img src="https://m.media-amazon.com/images/I/51U-rkUxKxL._AC_UF1000,1000_QL80_.jpg" class="img" alt="Pride and Prejudice Book Cover">
+                </a>
+                <a href="pride_prejudice.html"> <button class="button pap_button">Pride and Prejudice</button></a>
+            </div>
+            <!-- As A Driven Leaf -->
+            <div class="container">
+                <a href="https://www.thriftbooks.com/browse/?b.search=as%20a%20driven%20leaf#b.s=mostPopular-desc&b.p=1&b.pp=50&b.oos&b.tile">
+                    <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1347463821i/100065.jpg" class="img" alt="As a Driven Leaf Book Cover">
+                </a>
+                <a href="driven_leaf.html"> <button class="button dl_button">As A Driven Leaf</button></a>
+            </div>
+        </div>
+    </body>
+</html>
